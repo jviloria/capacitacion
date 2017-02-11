@@ -12,7 +12,9 @@ Mi primer módulo de Odoo
 
     """,
     'depends' : ['sale',],
-    'data':[],
+    'data':[
+    	"views/res_partner.xml",
+    ],
     'installable': True
 
 }

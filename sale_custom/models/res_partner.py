@@ -29,3 +29,9 @@ class resPartner(models.Model):
     surname = fields.Char('Surname')
     last_surname = fields.Char('Last Name')
     age = fields.Integer('Partner Age')
+    type_id = fields.Selection([
+					('CC','CEDULA DE CIUDADANIA'),
+					('NI','NIT'),
+					('RC','REGISTRO CIVIL'),
+					('PA','PASAPORTE')
+    			],string='Type ID',default='CC')
