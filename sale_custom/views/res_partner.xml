@@ -15,6 +15,9 @@
 	            	<field name="last_surname"/>
 	            	<field name="type_id"/>
             	</xpath>
+            	<xpath expr="//field[@name='fax']" position="attributes">
+            		<attribute name="invisible">1</attribute>
+            	</xpath>
             </field>
         </record>
 
