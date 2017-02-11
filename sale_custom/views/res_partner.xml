@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="view_partner_form_inh" model="ir.ui.view">
+            <field name="name">res.partner.form</field>
+            <field name="model">res.partner</field>
+            <field eval="1" name="priority"/>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+            	<xpath expr="//field[@name='title']" position="after">
+	            	<field name="first_name"/>
+	            	<field name="middle_name"/>
+	            	<field name="surname"/>
+	            	<field name="last_surname"/>
+	            	<field name="type_id"/>
+            	</xpath>
+            </field>
+        </record>
+
+    </data>
+</openerp>
