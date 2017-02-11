@@ -19,4 +19,13 @@
 #
 ##############################################################################
 
-import models
+from openerp import fields,models
+
+class resPartner(models.Model):
+    _inherit = 'res.partner'
+
+    first_name = fields.Char('First Name')
+    middle_name = fields.Char('Middle Name')
+    surname = fields.Char('Surname')
+    last_surname = fields.Char('Last Name')
+    age = fields.Integer('Partner Age')
