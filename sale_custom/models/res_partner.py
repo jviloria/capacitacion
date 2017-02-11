@@ -27,7 +27,7 @@ class resPartner(models.Model):
     first_name = fields.Char('First Name')
     middle_name = fields.Char('Middle Name')
     surname = fields.Char('Surname')
-    last_surname = fields.Char('Last Name')
+    last_surname = fields.Char('Last surname')
     age = fields.Integer('Partner Age')
     type_id = fields.Selection([
 					('CC','CEDULA DE CIUDADANIA'),
