@@ -24,7 +24,7 @@
                 </xpath>
                 <xpath expr="//notebook" position="inside">
                     <page string="Partner Invoices">
-
+                        <field name="factura_ids"/>
                     </page>
                 </xpath>
             </field>
