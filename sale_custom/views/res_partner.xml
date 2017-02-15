@@ -22,6 +22,11 @@
                 <xpath expr="//page[@name='sales_purchases']//field[@name='supplier']" position="after">
                     <field name="is_arl"/>
                 </xpath>
+                <xpath expr="//notebook" position="inside">
+                    <page string="Partner Invoices">
+
+                    </page>
+                </xpath>
             </field>
         </record>
 
