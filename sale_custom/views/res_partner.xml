@@ -14,10 +14,14 @@
 	            	<field name="surname" attrs="{'invisible':[('is_company','=',True)]}"/>
 	            	<field name="last_surname" attrs="{'invisible':[('is_company','=',True)]}"/>
 	            	<field name="type_id" attrs="{'invisible':[('is_company','=',True)]}"/>
+                    <field name="arl"/>
             	</xpath>
             	<xpath expr="//field[@name='fax']" position="attributes">
             		<attribute name="invisible">1</attribute>
             	</xpath>
+                <xpath expr="//page[@name='sales_purchases']//field[@name='supplier']" position="after">
+                    <field name="is_arl"/>
+                </xpath>
             </field>
         </record>
 

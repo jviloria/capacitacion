@@ -35,3 +35,5 @@ class resPartner(models.Model):
 					('RC','REGISTRO CIVIL'),
 					('PA','PASAPORTE')
     			],string='Type ID',default='CC')
+    arl = fields.Many2one('res.partner',string='ARL Company')
+    is_arl = fields.Boolean('Is ARL Company?')
