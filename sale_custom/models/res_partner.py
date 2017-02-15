@@ -35,6 +35,9 @@ class resPartner(models.Model):
 					('RC','REGISTRO CIVIL'),
 					('PA','PASAPORTE')
     			],string='Type ID',default='CC')
-    arl = fields.Many2one('res.partner',string='ARL Company', 
+    arl_id = fields.Many2one('res.partner',string='ARL Company', 
                             domain=[('is_arl','=',True)])
     is_arl = fields.Boolean('Is ARL Company?', default=False)
+    factura_ids = fields.One2many('account.invoice',
+                                  'partner_id',
+                                  'Partner Invoices')
