@@ -24,7 +24,16 @@
                 </xpath>
                 <xpath expr="//notebook" position="inside">
                     <page string="Partner Invoices">
-                        <field name="factura_ids"/>
+                        <separator string="Facturas de Clientes"/>
+                        <field name="factura_ids">
+                            <tree>
+                                <field name="date_invoice"/>
+                                <field name="number"/>
+                                <field name="amount_total"/>
+                                <field name="residual"/>
+                                <field name="state" invisible="1"/>
+                            </tree>
+                        </field>
                     </page>
                 </xpath>
             </field>
